@@ -200,7 +200,6 @@ header:hover .menu-navegacion{
 
 .showImage{
     transform: scale(1);
-
 }
 
 
@@ -318,19 +317,6 @@ footer{
 
 
 
-@media screen and (max-width:828px) {
-    .contenedor_head {
-        font-size: 40px;
-    }
-}
-
-
-
-
-
-
-
-
 
 @media screen and (max-width:800px){
     .menu-navegacion{
@@ -404,6 +390,34 @@ footer{
         text-align: left;
         width: 100%;
     }
+
+    .contenedor_head {
+        font-size: 40px;
+    }
+
+    .titulo{
+        flex-direction: column;
+        width: 40px;
+        text-align: center;
+        width: 100%;
+        
+    }
+
+    .copy{
+        flex-direction: column;
+        width: 40px;
+        text-align: center;
+        width: 100%;
+
+    }
+
+    .tienda{
+        flex-direction: column;
+        width: 40px;
+        text-align: center;
+        width: 100%;
+
+    }
 }
 
 @media screen and (max-width:500px){
@@ -466,6 +480,31 @@ footer{
         margin-bottom: 30px;
 
     }
+
+    .titulo{
+        flex-direction: column;
+        width: 40px;
+        text-align: left;
+        width: 100%;
+        
+    }
+
+    .copy{
+        flex-direction: column;
+        width: 40px;
+        text-align: left;
+        width: 100%;
+
+    }
+
+    .tienda{
+        flex-direction: column;
+        width: 40px;
+        text-align: left;
+        width: 100%;
+
+    }
+
 }
 
 
