@@ -32,7 +32,7 @@ header{
 }
 
 
-.head{
+.contenedor_head{
     text-align: center;
     padding: 0;
     height: 100%;
@@ -199,7 +199,7 @@ header:hover .menu-navegacion{
 }
 
 .showImage{
-    transform: scale(1);
+
 
 }
 
@@ -316,6 +316,22 @@ footer{
     margin-bottom: 60px;
 }
 
+
+
+@media screen and (max-width:828px) {
+    .contenedor_head {
+        font-size: 40px;
+    }
+}
+
+
+
+
+
+
+
+
+
 @media screen and (max-width:800px){
     .menu-navegacion{
         width: 50vw;
@@ -374,6 +390,20 @@ footer{
         margin-bottom: 40px;
     }
 
+    .brand{
+        flex-direction: column;
+        width: 20px;
+        text-align: center;
+        width: 100%;
+        
+    }
+
+    .n-service{
+        flex-direction: row;
+        width: 40px;
+        text-align: left;
+        width: 100%;
+    }
 }
 
 @media screen and (max-width:500px){
@@ -416,4 +446,26 @@ footer{
     } 
 
 
+    .n-service{
+        flex-direction: row;
+        width: 20px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .service{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .brand{
+        text-align: left;
+    }
+    .contact-us{
+        text-align: left;
+        margin-bottom: 30px;
+
+    }
 }
+
+
