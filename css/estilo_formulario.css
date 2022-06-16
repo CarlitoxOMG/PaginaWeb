@@ -1,0 +1,77 @@
+body{
+    font-family: 'Fredoka One', cursive;
+    background: #4776E6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #8E54E9, #4776E6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #8E54E9, #4776E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    text-align: center;
+    font-weight: 700;
+}
+
+form{
+    background: rgba(255, 255, 255, 0.798);
+    padding: 50px 100px;
+    box-shadow: 0 0 6px 0 rgba(140, 23, 242, 0.976);
+    border-radius: 20px;
+}
+
+
+.table, tr, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.form{
+    width: 100%;
+    margin: auto;
+}
+
+form .grupo{
+    position: relative;
+    margin: 45px;
+    
+}
+
+input{
+    background: none;
+    color: #0011ff;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--colorTextos);
+}
+
+input:focus{
+    outline: none;
+    color: rgb(0, 0, 0)
+}
+
+button{
+    font-family: 'Fredoka One', cursive;
+    background: #4776E6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #8E54E9, #4776E6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #8E54E9, #4776E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    display: block;
+    width: 100px;
+    height: 40px;
+    border: none;
+    color: #ffff;
+    border-radius: 4px;
+    font-size: 16px;
+    margin: 10px auto;
+}
+
+
+@media screen and (max-width: 500px){
+    .form{
+        width: 80%;
+    }
+}

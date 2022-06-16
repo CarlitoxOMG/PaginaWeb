@@ -1,0 +1,38 @@
+{% extends 'base.html' %} 
+
+{% block titulo_principal %}
+
+<div id=titulo_pagina>
+    Lista de Mascotas Registradas
+</div>
+{% endblock %} 
+
+{% block content %} 
+    <h3>Listado de Mascotas</h3>
+
+{% if object_list %}
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Raza</th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for mascota in object_list %}
+        <tr>
+            <th scope="row">{{ mascota.nombre_mascota }} </th>
+            <td>{{ mascota.raza }}</td>
+
+            <td><a class="btn btn-primary" href="{% url 'edit_mascota' mascota.id %}">Editar</a></td>
+            <td><a class="btn btn-danger" href="{% url 'del_mascota' mascota.id %}">Eliminar</a></td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+{% else %}
+    <h1>No hay registros de Mascota</h1>
+{% endif %} {% endblock %}

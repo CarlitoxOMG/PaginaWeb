@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/estilo_formulario.css">
+    <link rel="icon" href="/img/bxs-dog.svg">
+    <!-- jquey y validadores -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script language="javascript" type="text/javascript"
+        src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.10.0/jquery.validate.min.js"></script>
+    <script language="javascript" type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/additional-methods.min.js"></script>
+    <title>formulario</title>
+</head>
+<body>
+
+            <form method="POST" id="formulario" action="#">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Registro</th>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td><label for="id_Email">Email </label></td>
+                        <td><input type="email" name="Email" value="" id="id_Email" placeholder="Ingresa Su Email" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label>Contraseña </label></td>
+                        <td><input type="text" name="Contraseña" value="" required="" id="id_Contraseña" placeholder="Ingrese Constraseña" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label>Confirme Contraseña </label></td>
+                        <td><input type="text" name="RepetirContraseña" value="" required="" id="id_RepetirContraseña"  placeholder="Ingrese Nuevamente" />
+                        </td>
+                    </tr>
+                </tbody>
+                </table><br>
+                <button type="submit">Enviar</button>
+            </form>
+        
+        
+
+    <script src="/js/formulario.js"></script>
+
+</body>
+</html>
