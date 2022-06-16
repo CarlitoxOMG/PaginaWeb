@@ -6,16 +6,5 @@
 
 {% block content %} 
     <h2>Bienvenido a El Bazar de Snoopy</h2>
-    {% if user.is_authenticated %}
-        <p>Tu nombre es: {{user.first_name}} {{user.last_name}}</p>
-        <p>Tu email: {{user.email}}</p>
-
-
-        <br><br>
-        <a href="{% url 'logout' %}">Cerrar Session</a>
-    {% else %}
-        <p>Logueate para tener acceso a tus datos</p>
-        <a href="{% url 'login' %}">Ingresar</a>
-    {% endif %}
 {% endblock content %}
 
