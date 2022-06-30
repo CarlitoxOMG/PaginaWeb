@@ -43,7 +43,8 @@ urlpatterns = [
 
     path('del_mascota/<int:pk>', views.MascotaDelete.as_view(), name='del_mascota'),
 
-
-
+    # api
+    path('mascota/',  views.mascota_collection , name='mascota_collection'),
+    path('mascota/<int:pk>/', views.mascota_element ,name='mascota_element')
 ]
 

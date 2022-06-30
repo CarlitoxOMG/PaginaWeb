@@ -30,6 +30,8 @@ urlpatterns = [
     # localhost:8000/usuario
     path('usuario/', include('Usuario.urls')),
     
+    path('docente/', include('Docente.urls')),
+    
     # Login and Logout
     path('login/', LoginView.as_view(redirect_authenticated_user=True,template_name='Usuario/login.html'), name='login'),
     path('logout/', LogoutView.as_view(template_name='Usuario/logout.html'), name='logout'),

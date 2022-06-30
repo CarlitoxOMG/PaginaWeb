@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container">
+<h1 class="display-3">Vendedores</h1>
+<hr>
+<a class="btn" role="button" href="{% url 'docente_form' %}">Agregar</a>
+<hr>
+
+{% if not object_list %}
+<h1>No hay registro de docentes</h1>
+<br><br><br><br><br><br><br><br>
+{% else %}
+<table class="table table-bordered">
+    <thead>
+         <tr>
+             <td>Fotografia</td>
+             <td>Rut</td>
+             <td>Nombre</td>
+             <td>Email</td>
+             <td>Grado</td>
+         </tr>
+    </thead>
+    <tbody>  
+         {% for docente in object_list %}      
+         <tr>
+            <td><img src= ../../static/images/{{ docente.fotografia }} style="width: 100px;"/> </td>
+             <td>{{ docente.rut }}</td>
+             <td>{{ docente.nombre }}</td>
+             <td>{{ docente.email }}</td>
+             <td>{{ docente.grado_academico }}</td>
+             <td>
+            </td>
+             
+         </tr>
+         {% endfor %}                                
+    </tbody>
+</table>
+{% endif %}
+
+</div>
+
+{% endblock %}
